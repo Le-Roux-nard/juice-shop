@@ -19,7 +19,7 @@ $bg-heading: rgba(0, 0, 0, 0.2);
 
 .img-thumbnail {
   align-self: start;
-  width: 60% !important;       /* image ~60%, info-box ~40% */
+  width: 60% !important; /* image ~60%, info-box ~40% */
 }
 
 .heading {
@@ -29,7 +29,7 @@ $bg-heading: rgba(0, 0, 0, 0.2);
 .product {
   align-items: stretch;
   cursor: pointer;
-  display: flex;               /* lay out image + info side-by-side */
+  display: flex; /* lay out image + info side-by-side */
   flex-direction: row;
   gap: 12px;
 }
@@ -78,7 +78,7 @@ $bg-heading: rgba(0, 0, 0, 0.2);
 }
 
 .ribbon::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   z-index: -1;
@@ -88,7 +88,9 @@ $bg-heading: rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
   display: block;
-  font: 700 18px/1 'Lato', sans-serif;
+  font:
+    700 18px/1 "Lato",
+    sans-serif;
   padding: 15px 0;
   position: absolute;
   text-align: center;
@@ -154,24 +156,25 @@ mat-grid-tile {
   margin-top: -17px;
 }
 
-
 .center-align {
   display: flex;
   justify-content: center;
 }
-
 
 .info-box {
   align-self: center;
   width: 40%;
 }
 
-
 @media (max-width: 959.98px) {
   .product {
     flex-direction: column;
     gap: 10px;
   }
-  .info-box { width: 100%; }
-  .img-thumbnail { width: 100% !important; }
+  .info-box {
+    width: 100%;
+  }
+  .img-thumbnail {
+    width: 100% !important;
+  }
 }

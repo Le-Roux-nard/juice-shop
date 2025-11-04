@@ -115,17 +115,15 @@ div {
   gap: 20px;
 }
 
-@media (max-width: 599.98px) {  
+@media (max-width: 599.98px) {
   .details-row {
     flex-direction: column;
   }
 }
 
-
 .no-shrink {
   flex: 0 0 auto;
 }
-
 
 .review-row {
   align-items: flex-start;

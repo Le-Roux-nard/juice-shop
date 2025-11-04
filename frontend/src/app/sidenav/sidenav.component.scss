@@ -94,5 +94,7 @@ mat-nav-list {
   display: none !important;
 }
 @media (max-width: 959.98px) {
-  .show-lt-md-only { display: block !important; }
+  .show-lt-md-only {
+    display: block !important;
+  }
 }

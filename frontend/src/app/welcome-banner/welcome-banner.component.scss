@@ -47,8 +47,20 @@ mat-icon {
   }
 }
 
-.hide-lt-lg { display: inline; }
-@media (max-width: 1279.98px) { .hide-lt-lg { display: none !important; } }
+.hide-lt-lg {
+  display: inline;
+}
+@media (max-width: 1279.98px) {
+  .hide-lt-lg {
+    display: none !important;
+  }
+}
 
-.hide-lt-sm { display: inline; }
-@media (max-width: 599.98px) { .hide-lt-sm { display: none !important; } }
+.hide-lt-sm {
+  display: inline;
+}
+@media (max-width: 599.98px) {
+  .hide-lt-sm {
+    display: none !important;
+  }
+}

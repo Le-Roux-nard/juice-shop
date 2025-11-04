@@ -54,7 +54,7 @@ h1 {
 .mat-mdc-card-content {
   margin-right: 20px;
 }
- 
+
 .left-container {
   display: flex; // Use flex to prevent margin disappearing after reload.
 
@@ -73,11 +73,15 @@ h1 {
 }
 
 @media (max-width: 959.98px) {
-  .recycle-container { flex-direction: column;
-    gap: 20px; }
+  .recycle-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-  .flex-50 { flex: 0 0 100%;
-    max-width: 100%; }
+  .flex-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .right-container {
@@ -93,7 +97,6 @@ h1 {
   gap: 20px;
 }
 
-
 .card-row {
   align-items: flex-start;
   display: flex;
@@ -101,6 +104,7 @@ h1 {
   gap: 20px;
 }
 
-
-.flex-50 { flex: 0 0 50%;
-  max-width: 50%; }
+.flex-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
