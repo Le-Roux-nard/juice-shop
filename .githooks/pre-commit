@@ -6,7 +6,7 @@
 
 set -e
 
-HOOK_DIR="$(dirname "$0")/pre-commit.d"
+                    HOOK_DIR="$(dirname "$0")/pre-commit.d"
 
 echo "[HOOK] Lancement des sous-hooks pre-commit..."
 
