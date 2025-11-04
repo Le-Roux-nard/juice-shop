@@ -1,0 +1,23 @@
+#!/bin/bash
+# =========================================
+# Dispatcher pre-push
+# Exécute tous les sous-scripts dans pre-push.d/
+# =========================================
+
+set -e
+
+HOOK_DIR="$(dirname "$0")/pre-push.d"
+
+echo "[HOOK] Lancement des sous-hooks pre-push..."
+
+for script in "$HOOK_DIR"/*.sh; do
+    if [ -x "$script" ]; then
+        echo "→ Exécution de $(basename "$script")"
+        "$script"
+    else
+        echo "⚠️  Script non exécutable : $(basename "$script")"
+    fi
+done
+
+echo "✔️  Tous les hooks pre-push ont été exécutés avec succès."
+exit 0
