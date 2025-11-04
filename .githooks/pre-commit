@@ -10,7 +10,7 @@ HOOK_DIR="$(dirname "$0")/pre-commit.d"
 
 echo "[HOOK] Lancement des sous-hooks pre-commit..."
 
-for script in "$HOOK_DIR"/*.sh; do
+for script in "$HOOK_DIR/*.sh"; do
     if [ -x "$script" ]; then
         echo "→ Exécution de $(basename "$script")"
         "$script"
